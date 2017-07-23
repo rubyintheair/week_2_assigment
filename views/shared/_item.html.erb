@@ -1,0 +1,9 @@
+
+<li>
+  - <%= item[:item_name]%> [<%= item[:item_status]%> ] 
+  <input type="hidden" value=<%= item[:item_name]%> name="items[][item_name]">
+  <input type="hidden" value=<%= item[:item_status]%> name="items[][item_status]">
+  <button type = "submit" value=<%= item[:item_index]%> name= "toggle">
+    <%= item[:item_status] == "done" ? "Undo" : "Mark_as_done"%>
+  </button>
+</li>
